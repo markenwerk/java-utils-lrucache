@@ -1,7 +1,8 @@
 # An event based JSON parser for Java
 
 [![Build Status](https://travis-ci.org/markenwerk/java-utils-lrucache.svg?branch=master)](https://travis-ci.org/markenwerk/java-utils-lrucache)
-[![Coverage Status](https://coveralls.io/repos/github/markenwerk/java-utils-data-fetcher/badge.svg?branch=master)](https://coveralls.io/github/markenwerk/java-utils-data-fetcher?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/markenwerk/java-utils-lrucache/badge.svg?branch=master)](https://coveralls.io/github/markenwerk/java-utils-data-fetcher?branch=master)
+[![Dependency Status](https://www.versioneye.com/user/projects/57100c90fcd19a00415b15f9/badge.svg)](https://www.versioneye.com/user/projects/57100c90fcd19a00415b15f9)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.markenwerk/utils-lrucache/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.markenwerk/utils-lrucache)
 [![Issues](https://img.shields.io/github/issues/markenwerk/java-utils-lrucache.svg)](https://github.com/markenwerk/java-utils-lrucache/issues)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/markenwerk/java-utils-lrucache/blob/master/LICENSE)
@@ -20,7 +21,7 @@ This library is hosted in the [Maven Central Repository](https://maven-badges.he
 </dependency>
 ```
 
-Consult the [usage description](#usage) and [Javadoc](http://markenwerk.github.io/java-utils-lrucache/javadoc/index.html) for further information.
+Consult the [usage description](#usage) and [Javadoc](http://markenwerk.github.io/java-utils-lrucache/index.html) for further information.
 
 # Motivation
 
@@ -49,5 +50,13 @@ A [`LruCache`][LruCache] can be created with a [`LruCacheListener`][LruCacheList
 int cacheSize = ...
 
 // a map that never holds more than cacheSize elements
-Map<String, Object> cache = new LruCache<>(cacheSize, entry -> System.out.println(entry.getKey() + " got evicted"));
+Map<String, Object> cache = new LruCache<>(
+	cacheSize,
+	entry -> System.out.println(entry.getKey() + " got evicted")
+);
 ```
+
+[LruCache]: http://markenwerk.github.io/java-utils-lrucache/index.html?net/markenwerk/utils/lrucache/LruCache.html
+[LruCacheListener]: http://markenwerk.github.io/java-utils-lrucache/index.html?net/markenwerk/utils/lrucache/LruCacheListener.html
+
+[LinkedHashMap]: http://docs.oracle.com/javase/8/docs/api/index.html?java/util/LinkedHashMap.html
