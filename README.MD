@@ -1,4 +1,4 @@
-# An event based JSON parser for Java
+# A simple LRU cache for Java
 
 [![Build Status](https://travis-ci.org/markenwerk/java-utils-lrucache.svg?branch=master)](https://travis-ci.org/markenwerk/java-utils-lrucache)
 [![Coverage Status](https://coveralls.io/repos/github/markenwerk/java-utils-lrucache/badge.svg?branch=master)](https://coveralls.io/github/markenwerk/java-utils-lrucache?branch=master)
