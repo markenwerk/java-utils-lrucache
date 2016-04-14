@@ -1,7 +1,7 @@
 # An event based JSON parser for Java
 
 [![Build Status](https://travis-ci.org/markenwerk/java-utils-lrucache.svg?branch=master)](https://travis-ci.org/markenwerk/java-utils-lrucache)
-[![Coverage Status](https://coveralls.io/repos/github/markenwerk/java-utils-lrucache/badge.svg?branch=master)](https://coveralls.io/github/markenwerk/java-utils-data-fetcher?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/markenwerk/java-utils-lrucache/badge.svg?branch=master)](https://coveralls.io/github/markenwerk/java-utils-lrucache?branch=master)
 [![Dependency Status](https://www.versioneye.com/user/projects/57100c90fcd19a00415b15f9/badge.svg)](https://www.versioneye.com/user/projects/57100c90fcd19a00415b15f9)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.markenwerk/utils-lrucache/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.markenwerk/utils-lrucache)
 [![Issues](https://img.shields.io/github/issues/markenwerk/java-utils-lrucache.svg)](https://github.com/markenwerk/java-utils-lrucache/issues)
