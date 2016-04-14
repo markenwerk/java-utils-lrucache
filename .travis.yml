@@ -1,0 +1,10 @@
+language: java
+jdk:
+- openjdk7
+- oraclejdk7
+- oraclejdk8
+after_success:
+- mvn -P coverall clean test jacoco:report coveralls:report
+notifications:
+  slack:
+    secure: iS9KlqjlKHCtCXPKeGkiXHI4M99OrYPmyctD0uKRd9qZX6zgf6qfbp/xj8A3SBLL23gX8/C7VbXF1fUqidZ5ZKhL6S6Fr9t7Kjlv1+8NBJFddOXZi+9cvM+0zqrO5jqJU+sde5MsZlaUkf5Nyked89WVLzIySlC2YTIqQzXlIzv/m4nLIPaTDG3dp9/hbHn47zjAEAt7oEvpJsdNL42Dob8avdAYySpMxF40beet9R/oiTkdJuk9JiC+OPGzLEnUko7IfcWVNqOHhahL6Op16t5hQv4oJ+AzcGA+7wHg8GHGmUl/p8ovdASG3jSBXhWGQN8dYHuR58rVg6tKLomlWmtIM+4nNdrnPYenlds4eapxBju1EDM8sE1G2xNQdVO+bCCaAHQwSqsQD6LWLoc9odk9CkdjgpM/GYOVlpLewahKSjmkMiovXZGSmQVAnxHD3K4qJHU1p+sIe9hTDiygCRkdGf1+gI3iJZFXTUDg0Q9aKlcBWoVqKgGq/H0OAuQdOOCjEell9QOcrlLPu+DvofgELrKl/eV/uxPsqR2zSKXoJQccqNl3Ljo+251H8SFzYDI/lpZS+Ezoe0avh0t8GkySbmRlcC3VMxnhAfDbwq2OMuorOukWNvAI+N5gQch9Z9Kja+s0xSncJR1oEl62KOkn5Ymd3eNLOLHxkuTaMiQ=
